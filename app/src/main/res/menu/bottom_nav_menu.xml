@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:id="@+id/addrecipe"
+        android:title="ajouter une recette"
+        android:icon="@drawable/ic_baseline_add_recipe_24"/>
+    <item android:id="@+id/profile"
+        android:title="profile"
+        android:icon="@drawable/ic_baseline_account_24"/>
+    <item android:id="@+id/setting"
+        android:title="parametre"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>

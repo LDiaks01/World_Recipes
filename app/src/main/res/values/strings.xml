@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">world recipes</string>
+
+    <string name="choisissez_votre_langue_pref_r_pour_naviguer_dans_notre_application">Choisissez votre langue preféré pour naviguer dans notre application</string>
+    <string name="bienvenue">Bienvenue a World Recipe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
