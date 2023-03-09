@@ -21,6 +21,7 @@ import androidx.biometric.BiometricPrompt;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.example.worldrecipes.manager.UserManager;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
@@ -66,7 +67,15 @@ public class LoginTabFragment extends Fragment {
         btn2_open.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startSignInActivity();
+                if(userManager.isCurrentUserLogged()){
+                    Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(getActivity().getApplicationContext(), userManager.getCurrentUser().getDisplayName().toString() + " est connectée", Toast.LENGTH_SHORT).show();
+
+                }else{
+                    startSignInActivity();
+                }
+
 
             }
         });
@@ -178,6 +187,7 @@ public class LoginTabFragment extends Fragment {
     //Auth, added by LDiaks01
 
     private static final int RC_SIGN_IN = 123;
+    private UserManager userManager = UserManager.getInstance();
 
     private void startSignInActivity() {
 
@@ -191,10 +201,10 @@ public class LoginTabFragment extends Fragment {
         startActivityForResult(
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
-                        .setTheme(R.style.Theme_WorldRecipes)
+                        .setTheme(com.firebase.ui.auth.R.style.FirebaseUI_DefaultMaterialTheme)
                         .setAvailableProviders(providers)
                         //.setIsSmartLockEnabled(false, true)
-                        .setLogo(R.drawable.logo2)
+                        .setLogo(R.drawable.logo)
                         .build(),
                 RC_SIGN_IN);
     }
