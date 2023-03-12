@@ -7,7 +7,7 @@
     tools:context=".fragments.Setting_fragment">
 
     <TextView
-        android:text="Paramètres de compte"
+        android:text="@string/Paramètrescompte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/confidentiality_option"
-        android:text="Confidentialité"
+        android:text="@string/confident"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -25,7 +25,7 @@
     <!-- Option "Sécurité" -->
     <TextView
         android:id="@+id/security_option"
-        android:text="Sécurité"
+        android:text="@string/securité"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -35,7 +35,7 @@
     <!-- Option "Conditions d'utilisation" -->
     <TextView
         android:id="@+id/terms_of_use_option"
-        android:text="Conditions d'utilisation"
+        android:text="@string/condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -43,7 +43,7 @@
         android:layout_below="@id/security_option"/>
     <TextView
         android:id="@+id/help_option"
-        android:text="Aide"
+        android:text="@string/Aide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -53,7 +53,7 @@
     <!-- Option "Nous contacter" -->
     <TextView
         android:id="@+id/contact_us_option"
-        android:text="Nous contacter"
+        android:text="@string/contact"
         android:layout_width="wrap_content"
         android:textSize="20sp"
         android:paddingBottom="10dp"
@@ -62,7 +62,7 @@
 
     <TextView
         android:id="@+id/about_option"
-        android:text="A propos"
+        android:text="@string/about"
         android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

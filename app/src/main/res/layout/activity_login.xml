@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    >
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/constraintlay"
@@ -59,7 +58,6 @@
         app:layout_constraintHeight_percent=".7"
         app:layout_constraintTop_toBottomOf="@+id/tab_layout"
 
-
          />
 
 
@@ -99,5 +97,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/constraintlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

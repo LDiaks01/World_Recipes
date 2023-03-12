@@ -147,7 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/pink"
-        android:text="Envoyer" />
+        android:text="@string/envoyer" />
 
 
 </RelativeLayout>

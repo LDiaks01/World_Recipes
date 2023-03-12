@@ -4,7 +4,8 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
 
 
     <Button
@@ -12,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink"
-        android:text="Connexion/inscription"
+        android:text="@string/Connexioninscription"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -28,7 +29,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink"
-        android:text="connectez vous avec empreinte"
+        android:text="@string/empreinte"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -43,7 +44,7 @@
         android:id="@+id/titre_connexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connectez Vous"
+        android:text="@string/connect"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/connexion"
@@ -57,7 +58,7 @@
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="use your fingerPrint to login"
+        android:text="@string/fingerp"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/hors_connexion"
@@ -68,7 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink"
-        android:text="Hors connexion"
+        android:text="@string/horsconnexion"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"

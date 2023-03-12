@@ -39,7 +39,7 @@ public class LoginTabFragment extends Fragment {
 
     Button connecter;
     TextView txinfo;
-    Button btn_fp;
+    Button btn_fp, hors_conn;
     float v = 0;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,7 +47,22 @@ public class LoginTabFragment extends Fragment {
 
         connecter = root1.findViewById(R.id.connexion);
         txinfo = root1.findViewById(R.id.info);
+        hors_conn=root1.findViewById(R.id.hors_connexion);
         btn_fp = root1.findViewById(R.id.empreinteConn);
+
+        connecter.setTranslationX(800);
+        hors_conn.setTranslationX(800);
+        btn_fp.setTranslationX(800);
+
+        connecter.setAlpha(v);
+        hors_conn.setAlpha(v);
+        btn_fp.setAlpha(v);
+
+        connecter.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(300).start();
+        hors_conn.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(500).start();
+        btn_fp.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
+
+
 
 
 
