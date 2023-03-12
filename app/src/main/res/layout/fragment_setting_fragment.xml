@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragments.Setting_fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="Paramètres de compte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:paddingBottom="40dp"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/confidentiality_option"
+        android:text="Confidentialité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"/>
+
+    <!-- Option "Sécurité" -->
+    <TextView
+        android:id="@+id/security_option"
+        android:text="Sécurité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/confidentiality_option"/>
+
+    <!-- Option "Conditions d'utilisation" -->
+    <TextView
+        android:id="@+id/terms_of_use_option"
+        android:text="Conditions d'utilisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/security_option"/>
+    <TextView
+        android:id="@+id/help_option"
+        android:text="Aide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/terms_of_use_option"/>
+
+    <!-- Option "Nous contacter" -->
+    <TextView
+        android:id="@+id/contact_us_option"
+        android:text="Nous contacter"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help_option"/>
+
+    <TextView
+        android:id="@+id/about_option"
+        android:text="A propos"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/contact_us_option"/>
+
+
+</LinearLayout>

@@ -10,5 +10,18 @@
     <string name="info_no_username_found">Aucun nom d\'utilisateur trouvé</string>
 
     <string name="popup_message_confirmation_delete_account">Supprimer le compte</string>
-
+<string name="messageintroduction">Notre application propose des recettes de cuisine traditionnelle et exotique du monde entier, faciles à préparer avec des instructions détaillées. </string>
+<string name="suivant">suivant</string>
+    <string name="arabe">العربية</string>
+    <string name="francais">Français</string>
+    <string name="anglais">English</string>
+    <string name="description"></string>
+    <string name="description2"></string>
+    <string name="description3"></string>
+    <string name="nomrecette">Nom de la recette</string>
+    <string name="pays">Pays d"origine</string>
+    <string name="desc">Description</string>
+    <string name="insert">inserer votre image</string>
+    <string name="chercher">Chercher votre recette</string>
+    <string name="recette">Toutes nos recettes</string>
 </resources>
