@@ -19,7 +19,7 @@ float v=0;
         setContentView(R.layout.activity_login);
         tabLayout=(TabLayout) findViewById(R.id.tab_layout);
         viewPager=findViewById(R.id.view_pagers);
-        google=findViewById(R.id.tap_google);
+
 
         tabLayout.addTab(tabLayout.newTab().setText("CONNEXION"));
         tabLayout.addTab(tabLayout.newTab().setText("INSCRIPTION"));
@@ -31,11 +31,11 @@ float v=0;
 
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        google.setTranslationY(300);
+
         tabLayout.setTranslationY(300);
 
-        google.setAlpha(v);
+
         tabLayout.setAlpha(v);
-        google.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
+
     }
 }

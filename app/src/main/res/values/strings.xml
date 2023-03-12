@@ -1,14 +1,45 @@
 <resources>
     <string name="app_name">world recipes</string>
 
-    <string name="choisissez_votre_langue_pref_r_pour_naviguer_dans_notre_application">Choisissez votre langue preféré pour naviguer dans notre application</string>
-    <string name="bienvenue">Bienvenue a World Recipe</string>
+    <string name="choisissez_votre_langue_pref_r_pour_naviguer_dans_notre_application">Choose your preferred language to navigate in our application</string>
+    <string name="bienvenue">Welcome to World Recipe</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="info_no_email_found">Aucun email trouvé</string>
-    <string name="info_no_username_found">Aucun nom d\'utilisateur trouvé</string>
+    <string name="info_no_email_found">No email found</string>
+    <string name="info_no_username_found">No username found</string>
 
-    <string name="popup_message_confirmation_delete_account">Supprimer le compte</string>
-
+    <string name="popup_message_confirmation_delete_account">Delete account</string>
+<string name="messageintroduction">Our application offers traditional and exotic recipes from around the world, easy to prepare with detailed instructions.</string>
+<string name="suivant">Next</string>
+    <string name="arabe">العربية</string>
+    <string name="francais">Français</string>
+    <string name="anglais">English</string>
+    <string name="description"></string>
+    <string name="description2"></string>
+    <string name="description3"></string>
+    <string name="nomrecette">Recipe name</string>
+    <string name="pays">Country of origin</string>
+    <string name="desc">Description</string>
+    <string name="insert">Insert your image</string>
+    <string name="chercher">Search for your recipe</string>
+    <string name="recette">All our recipes</string>
+    <string name="envoyer">Send</string>
+    <string name="prenom">First name</string>
+    <string name="nom">Last name</string>
+    <string name="email">Email</string>
+    <string name="supprimer">Delete account</string>
+    <string name="modifierprofile">Edit profile</string>
+    <string name="Paramètrescompte">Account settings</string>
+    <string name="confident">Privacy</string>
+    <string name="securité">Security</string>
+    <string name="condition">Terms of use</string>
+    <string name="Aide">Help</string>
+    <string name="contact">Contact us</string>
+    <string name="about">About</string>
+    <string name="Connexioninscription">Login/Register</string>
+    <string name="empreinte">Log in with fingerprint</string>
+    <string name="connect">Log in</string>
+    <string name="fingerp">use your fingerPrint to login</string>
+    <string name="horsconnexion">Offline</string>
 </resources>

@@ -4,57 +4,23 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_bg"
-        android:hint="Email"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163"
-        app:layout_constraintWidth_percent=".8" />
-
-    <EditText
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Mot de passe"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:id="@+id/password"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/edit_text_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintWidth_percent=".8"
-        app:layout_constraintVertical_bias="0"
-        />
 
     <Button
         android:id="@+id/connexion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink"
-        android:text="Se connecter"
+        android:text="@string/Connexioninscription"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.341"
         app:layout_constraintWidth_percent=".8" />
 
@@ -63,82 +29,55 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink"
-        android:text="connectez vous avec empreinte"
+        android:text="@string/empreinte"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/connexion"
-        app:layout_constraintVertical_bias="0.106"
+        app:layout_constraintVertical_bias="0.245"
         app:layout_constraintWidth_percent=".8" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="5dp"
-        android:text="Mot de passe oublié?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/password"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/password"
-        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/titre_connexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connectez Vous"
+        android:text="@string/connect"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintBottom_toTopOf="@+id/connexion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093" />
 
-    <!--<TextView
-        android:id="@+id/other_choix"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vous n'Avez pas un compte?Inscrivez vous"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/connexion"
-        app:layout_constraintVertical_bias="0.611" />-->
     <TextView
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="use your fingerPrint to login"
+        android:text="@string/fingerp"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/inscription"
+        app:layout_constraintBottom_toTopOf="@+id/hors_connexion"
         app:layout_constraintEnd_toEndOf="parent" />
+
     <Button
-        android:id="@+id/inscription"
+        android:id="@+id/hors_connexion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pink"
-        android:text="S'inscrire"
+        android:text="@string/horsconnexion"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/empreinteConn"
-        app:layout_constraintVertical_bias="0.705"
+        app:layout_constraintVertical_bias="0.345"
         app:layout_constraintWidth_percent=".8" />
 
 

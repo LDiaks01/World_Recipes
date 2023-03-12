@@ -36,32 +36,35 @@ import java.util.concurrent.Executor;
 
 public class LoginTabFragment extends Fragment {
 
-    EditText email, motdepasse;
+
     Button connecter;
     TextView txinfo;
-    Button btn_fp;
+    Button btn_fp, hors_conn;
     float v = 0;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root1 = (ViewGroup) inflater.inflate(R.layout.login_tab_fragment, container, false);
-        email = root1.findViewById(R.id.email);
-        motdepasse = root1.findViewById(R.id.password);
+
         connecter = root1.findViewById(R.id.connexion);
         txinfo = root1.findViewById(R.id.info);
+        hors_conn=root1.findViewById(R.id.hors_connexion);
         btn_fp = root1.findViewById(R.id.empreinteConn);
 
-
-        email.setTranslationX(800);
-        motdepasse.setTranslationX(800);
         connecter.setTranslationX(800);
+        hors_conn.setTranslationX(800);
+        btn_fp.setTranslationX(800);
 
-        email.setAlpha(v);
-        motdepasse.setAlpha(v);
         connecter.setAlpha(v);
+        hors_conn.setAlpha(v);
+        btn_fp.setAlpha(v);
 
-        email.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(300).start();
-        motdepasse.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(500).start();
-        connecter.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
+        connecter.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(300).start();
+        hors_conn.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(500).start();
+        btn_fp.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
+
+
+
+
 
         Button btn2_open = (Button) root1.findViewById(R.id.connexion);
         btn2_open.setOnClickListener(new View.OnClickListener() {
@@ -80,12 +83,12 @@ public class LoginTabFragment extends Fragment {
             }
         });
 
-        Button btn3_open = (Button) root1.findViewById(R.id.inscription);
+        Button btn3_open = (Button) root1.findViewById(R.id.hors_connexion);
         btn3_open.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity().getApplicationContext(), SignupTabFragment.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -135,8 +138,8 @@ public class LoginTabFragment extends Fragment {
 
     BiometricPrompt.PromptInfo.Builder dialogMetric() {
         return new BiometricPrompt.PromptInfo.Builder().
-                setTitle("bio login").
-                setSubtitle("login use bio");
+                setTitle("Connexion avec empreinte").
+                setSubtitle("utiliser votre empreinte");
     }
 
     private void CheckBiometricSupported() {
@@ -153,12 +156,12 @@ public class LoginTabFragment extends Fragment {
                 enableButton(false);
                 break;
             case BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE:
-                info = "nonon";
+                info = "unvailable";
                 enableButton(false);
                 break;
 
             case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
-                info = "aaaa";
+                info = "npn enrolled";
                 enableButton(false, true);
                 break;
             default:

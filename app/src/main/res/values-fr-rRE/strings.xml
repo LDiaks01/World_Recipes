@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">world recipes</string>
+    <string name="choisissez_votre_langue_pref_r_pour_naviguer_dans_notre_application">Choisissez votre langue preféré pour naviguer dans notre application</string>
+    <string name="bienvenue">Bienvenue a World Recipe</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_no_email_found">Aucun email trouvé</string>
+    <string name="info_no_username_found">Aucun nom d\'utilisateur trouvé</string>
+    <string name="popup_message_confirmation_delete_account">Supprimer le compte</string>
+    <string name="messageintroduction">"Notre application propose des recettes de cuisine traditionnelle et exotique du monde entier, faciles à préparer avec des instructions détaillées. "</string>
+    <string name="suivant">suivant</string>
+    <string name="arabe">العربية</string>
+    <string name="francais">Français</string>
+    <string name="anglais">English</string>
+    <string name="nomrecette">Nom de la recette</string>
+    <string name="pays">Pays dorigine</string>
+    <string name="desc">Description</string>
+    <string name="insert">inserer votre image</string>
+    <string name="chercher">Chercher votre recette</string>
+    <string name="recette">Toutes nos recettes</string>
+    <string name="envoyer">envoyer</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="email">Email</string>
+    <string name="supprimer">Supprimer le compte</string>
+    <string name="modifierprofile">modifier profile</string>
+    <string name="Paramètrescompte">Paramètres de compte</string>
+    <string name="confident">Confidentialité</string>
+    <string name="securité">Confidentialité</string>
+    <string name="condition">Conditions dutilisation</string>
+    <string name="Aide">Aide</string>
+    <string name="contact">Nous contacter</string>
+    <string name="about">A propos</string>
+    <string name="Connexioninscription">Connexion/inscription</string>
+    <string name="empreinte">connectez vous avec empreinte</string>
+    <string name="connect">Connectez Vous</string>
+    <string name="fingerp">use your fingerPrint to login</string>
+    <string name="horsconnexion">Hors connexion</string>
+</resources>
