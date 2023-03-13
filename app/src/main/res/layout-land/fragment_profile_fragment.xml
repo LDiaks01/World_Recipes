@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".fragments.Profile_fragment">
 
-
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -232,4 +231,5 @@
     </LinearLayout>
 
 </RelativeLayout>
-    </ScrollView>
+
+</ScrollView>
