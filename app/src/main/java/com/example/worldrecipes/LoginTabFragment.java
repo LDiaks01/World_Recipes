@@ -22,6 +22,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.worldrecipes.manager.UserManager;
+import com.example.worldrecipes.recyclerviews.categoryView;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
@@ -88,7 +89,7 @@ public class LoginTabFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getActivity().getApplicationContext(), categoryView.class);
                 startActivity(intent);
             }
         });

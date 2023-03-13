@@ -8,6 +8,7 @@ import android.view.MenuItem;
 
 import com.example.worldrecipes.fragments.Add_recipe_fragment;
 import com.example.worldrecipes.fragments.Home_fragment;
+import com.example.worldrecipes.fragments.Home_fragment;
 import com.example.worldrecipes.fragments.Profile_fragment;
 import com.example.worldrecipes.fragments.Setting_fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

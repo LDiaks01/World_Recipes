@@ -10,8 +10,8 @@
     <string name="info_no_username_found">No username found</string>
 
     <string name="popup_message_confirmation_delete_account">Delete account</string>
-<string name="messageintroduction">Our application offers traditional and exotic recipes from around the world, easy to prepare with detailed instructions.</string>
-<string name="suivant">Next</string>
+    <string name="messageintroduction">Our application offers traditional and exotic recipes from around the world, easy to prepare with detailed instructions.</string>
+    <string name="suivant">Next</string>
     <string name="arabe">العربية</string>
     <string name="francais">Français</string>
     <string name="anglais">English</string>

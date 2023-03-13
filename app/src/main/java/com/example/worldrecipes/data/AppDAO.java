@@ -24,6 +24,12 @@ public interface AppDAO {
     @Query("Select * from recipe_details_light where recipe_id =:id")
     public Recipes getOneRecipes(int id);
 
+    @Query("SELECT COUNT(*) FROM recipe_details_light where cuisine =:category")
+    public int coutRecipesByCategory(String category);
+
+    @Query("SELECT distinct cuisine from recipe_details_light")
+    public List<String> getAllCategories();
+
 
     @RawQuery
     Cursor getRecipesByName(SupportSQLiteQuery query);
