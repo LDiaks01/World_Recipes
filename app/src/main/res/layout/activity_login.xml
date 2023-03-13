@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    tools:ignore="MissingDefaultResource">
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/constraintlay"
-        android:layout_width="726dp"
-        android:layout_height="188dp"
-        android:contentDescription="@string/description3"
+        android:layout_width="407dp"
+        android:layout_height="187dp"
         android:scaleType="centerCrop"
         android:src="@drawable/backgroundpink"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +17,9 @@
         app:layout_constraintHeight_percent=".27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        app:layout_constraintVertical_bias="0"
+        android:contentDescription="@string/description3"
+        />
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/constraintlay2"
@@ -44,7 +38,7 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -56,15 +50,24 @@
         android:id="@+id/view_pagers"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_wrapBehaviorInParent="horizontal_only"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tab_layout"
-        app:layout_constraintVertical_bias="1.0"
 
-        app:layout_wrapBehaviorInParent="horizontal_only" />
+         />
+
+
+
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -97,5 +100,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>

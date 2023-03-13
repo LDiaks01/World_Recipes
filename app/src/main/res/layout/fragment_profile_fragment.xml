@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Profile_fragment">
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
 
     <include layout="@layout/toolbar"/>
 
@@ -33,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="amel kahil"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -232,4 +225,3 @@
     </LinearLayout>
 
 </RelativeLayout>
-    </ScrollView>
