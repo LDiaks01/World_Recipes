@@ -15,6 +15,7 @@ import com.example.worldrecipes.data.Recipes;
 import com.example.worldrecipes.recyclerviews.RecetteViewAdapter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class RecettesDetailActivity extends AppCompatActivity {
@@ -65,13 +66,28 @@ public class RecettesDetailActivity extends AppCompatActivity {
     {
         AppDatabase db = AppDatabase.getDatabase(getApplicationContext());
         AppDAO myDao = db.appDAO();
+        List<Integer> imgPreset = new ArrayList(Arrays.asList(R.drawable.africa,
+                R.drawable.china,
+                R.drawable.thailand,
+                R.drawable.greece,
+                R.drawable.italy,
+                R.drawable.easterneurope,
+                R.drawable.spain,
+                R.drawable.usa));
 
         List<Recipes> recipes = myDao.getRecipesByCuisine(cuisine);
 
+        int i = 0;
         for (Recipes recipe: recipes
              ) {
+
             titreRecettes.add(recipe.title);
             nbIngredients.add(myDao.getNbIngredientsPerRecipes(recipe.recipeId));
+            i++;
+            if(i == imgPreset.size() - 1){
+                i = 0;
+            }
+            images.add(imgPreset.get(i));
 
         }
 

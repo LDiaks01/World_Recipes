@@ -25,7 +25,7 @@ public class RecetteViewAdapter extends RecyclerView.Adapter<RecetteViewAdapter.
         this.context = context;
         this.titreRecettes = titreRecettes;
         this.nbIngredients = nbIngredients;
-       // this.imageRes = imageRes;
+        this.imageRes = imageRes;
     }
 
     @NonNull
@@ -40,7 +40,7 @@ public class RecetteViewAdapter extends RecyclerView.Adapter<RecetteViewAdapter.
     @Override
     public void onBindViewHolder(@NonNull RecetteViewAdapter.RecetteViewHolder holder, int position) {
         holder.titreRecette.setText(titreRecettes.get(position));
-        //holder.imageRecette.setImageResource(imageRes.get(position));
+        holder.imageRecette.setImageResource(imageRes.get(position));
         holder.nbIngredients.setText("Composé de " + nbIngredients.get(position).toString() + " Ingredients");
 
     }
