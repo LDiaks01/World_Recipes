@@ -42,4 +42,7 @@
     <string name="connect">Log in</string>
     <string name="fingerp">use your fingerPrint to login</string>
     <string name="horsconnexion">Offline</string>
+    <string name="categorie2">Nos Catégories de Recettes </string>
+    <string name="needconnexion">Vous devez vous connecter pour accéder à cette page</string>
+    <string name="hors_connexion_toast">Accès Hors Connexion</string>
 </resources>

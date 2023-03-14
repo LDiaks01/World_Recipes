@@ -37,9 +37,11 @@ LottieAnimationView lottieAnimationView;
              new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(FirstPage.this, ChoixLangue.class);
+
+                    Intent intent = new Intent(getApplicationContext(), ChoixLangue.class);
                     startActivity(intent);
                     finish();
+
                 }
             }, SPLASH_SCREEN_TIMEOUT);
 

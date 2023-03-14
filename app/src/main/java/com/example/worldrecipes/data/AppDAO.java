@@ -30,6 +30,9 @@ public interface AppDAO {
     @Query("SELECT distinct cuisine from recipe_details_light")
     public List<String> getAllCategories();
 
+    @Query("SELECT count(*) from recipes_aliases_light2 where RecipeID=:recipe_id")
+    public int getNbIngredientsPerRecipes(int recipe_id);
+
 
     @RawQuery
     Cursor getRecipesByName(SupportSQLiteQuery query);

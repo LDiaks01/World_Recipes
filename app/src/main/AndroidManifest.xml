@@ -20,6 +20,13 @@
         android:theme="@style/Theme.WorldRecipes"
         tools:targetApi="31">
         <activity
+            android:name=".RecettesDetailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".recyclerviews.categoryView"
             android:exported="false">
             <meta-data

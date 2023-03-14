@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.worldrecipes.R;
 import com.example.worldrecipes.RecyclerViewAdapter;
@@ -37,6 +39,8 @@ public class categoryView extends AppCompatActivity {
         CategoryViewAdapter categoryViewAdapter = new CategoryViewAdapter(this,categories, nombreRecettes, imageRes);
         categoryView.setAdapter(categoryViewAdapter);
         categoryView.setLayoutManager(new LinearLayoutManager(this));
+
+
 
     }
 
