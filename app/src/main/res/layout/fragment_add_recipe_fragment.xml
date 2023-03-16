@@ -141,13 +141,33 @@
         android:src="@drawable/ic_baseline_image_24"
         android:contentDescription="@string/description3"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/btn_submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/pink"
-        android:text="@string/envoyer" />
+        android:text="@string/envoyer" />-->
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/capture_image_btn"
+        android:layout_marginTop="95dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_marginBottom="-83dp"
+            android:text="@string/envoyer" />
+    </LinearLayout>
 
 
 </RelativeLayout>

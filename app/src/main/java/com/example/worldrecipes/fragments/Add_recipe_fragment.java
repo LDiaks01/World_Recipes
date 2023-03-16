@@ -2,9 +2,15 @@ package com.example.worldrecipes.fragments;
 
 import static androidx.core.content.PermissionChecker.checkSelfPermission;
 
+import android.app.NotificationChannel;
+import android.content.Context;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -13,12 +19,14 @@ import android.os.Build;
 import android.os.Bundle;
 
 import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +34,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.worldrecipes.MainActivity;
 import com.example.worldrecipes.R;
 
 
@@ -60,6 +69,39 @@ public class Add_recipe_fragment extends Fragment {
                 else{
                     openCamera();
                 }
+            }
+        });
+
+        Button btn_submit = rootView.findViewById(R.id.btn_submit);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel("mynotif",
+                    "mynot", NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = getActivity().getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
+        btn_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+
+                Intent launchIntent = new Intent(getActivity(), MainActivity.class);
+                launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                PendingIntent pendingIntent = PendingIntent.getActivity(getActivity(), 0, launchIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+
+                NotificationCompat.Builder builder=new NotificationCompat.Builder(
+                        getActivity().getApplicationContext(), "mynotif");
+                builder.setContentTitle("Nouvelle recette délicieuse");
+                builder.setContentText("Une nouvelle recette a été ajouté, ouvrez l'application afin de la découvrire");
+                builder.setSmallIcon(R.drawable.ic_baseline_notifications_none_24);
+                builder.setAutoCancel(true);
+
+                builder.setContentIntent(pendingIntent); // Ajouter le PendingIntent
+
+                NotificationManagerCompat managerCompat=NotificationManagerCompat.from(
+                        getActivity().getApplicationContext());
+                managerCompat.notify(1, builder.build());
             }
         });
 

@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.worldrecipes.fragments.Notification_fragment;
 import com.example.worldrecipes.manager.UserManager;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -21,6 +23,7 @@ import com.example.worldrecipes.fragments.Profile_fragment;
 import com.example.worldrecipes.fragments.Setting_fragment;
 import com.example.worldrecipes.recyclerviews.CategoryViewAdapter;
 import com.firebase.ui.auth.data.model.User;
+import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -41,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
     Setting_fragment setting_fragment=new Setting_fragment();
     Add_recipe_fragment add_recipe_fragment= new Add_recipe_fragment();
     Profile_fragment profile_fragment=new Profile_fragment();
+    Notification_fragment notification_fragment=new Notification_fragment();
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +55,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bottomNavigationView=findViewById(R.id.bottom_navigation);
 
+
+        BadgeDrawable badgeDrawable= bottomNavigationView.getOrCreateBadge(R.id.notification);
+        badgeDrawable.setVisible(true);
+        badgeDrawable.setNumber(1);
+
+
+
+
         getSupportFragmentManager().beginTransaction().replace(R.id.containere,home_fragment).commit();
+
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -79,7 +95,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.addrecipe:
                         getSupportFragmentManager().beginTransaction().replace(R.id.containere,add_recipe_fragment).commit();
                         return true;
+
+                    case R.id.notification:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containere,notification_fragment).commit();
+                        return true;
                 }
+
+
+
                 return false;
             }
         });

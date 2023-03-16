@@ -9,6 +9,11 @@
     <item android:id="@+id/profile"
         android:title="profile"
         android:icon="@drawable/ic_baseline_account_24"/>
+
+    <item android:id="@+id/notification"
+        android:title="Notification"
+        android:icon="@drawable/ic_baseline_notifications_none_24"/>
+
     <item android:id="@+id/setting"
         android:title="parametre"
         android:icon="@drawable/ic_baseline_settings_24"/>

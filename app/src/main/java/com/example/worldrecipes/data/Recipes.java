@@ -1,6 +1,6 @@
 package com.example.worldrecipes.data;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

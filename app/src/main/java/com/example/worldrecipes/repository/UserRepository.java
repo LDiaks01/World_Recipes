@@ -1,7 +1,7 @@
 package com.example.worldrecipes.repository;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.Task;
