@@ -45,4 +45,40 @@
     <string name="categorie2">Nos Catégories de Recettes </string>
     <string name="needconnexion">Vous devez vous connecter pour accéder à cette page</string>
     <string name="hors_connexion_toast">Accès Hors Connexion</string>
+
+
+    <!-- Titres des préférences -->
+    <string name="preferences">Préférences</string>
+    <string name="proposer_une_recette">Proposer une recette</string>
+    <string name="partager_avec_des_amis">Partager avec des amis</string>
+
+    <!-- Tableaux de chaînes de caractères -->
+    <string-array name="ingrédients_à_éviter">
+        <item>Lait</item>
+        <item>Blé</item>
+        <item>Soja</item>
+        <item>Fruits à coque</item>
+    </string-array>
+    <string-array name="régimes_alimentaires">
+        <item>Végétarien</item>
+        <item>Végétalien</item>
+        <item>Sans gluten</item>
+        <item>Casher</item>
+    </string-array>
+
+    <string-array name="notifications_frequency_options">
+        <item>Toutes les heures</item>
+        <item>Toutes les 3 heures</item>
+        <item>Toutes les 6 heures</item>
+        <item>Une fois par jour</item>
+        <item>Une fois par semaine</item>
+    </string-array>
+
+    <string-array name="notifications_frequency_values">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>24</item>
+        <item>168</item>
+    </string-array>
 </resources>

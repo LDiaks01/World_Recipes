@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Paramètres utilisateur">
+        <SwitchPreference
+            android:key="data_partage"
+            android:title="Données d'utilisation"
+            android:summary="Activer l'envoi des données pour diagnostic"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:key="social_partage"
+            android:title="Fonctionnalités des réseaux sociaux"
+            android:summary="Activer les fonctionnalités des réseaux sociaux"
+            android:defaultValue="true"/>
+
+
+        <PreferenceCategory android:title="Notifications">
+        <SwitchPreference
+            android:key="notifications_enabled"
+            android:title="Activer les notifications"
+            android:summary="Recevoir des notifications pour les nouvelles recettes"
+            android:defaultValue="true"/>
+        <ListPreference
+            android:key="notifications_frequency"
+            android:title="Fréquence des notifications"
+            android:summary="Choisir la fréquence à laquelle les notifications seront envoyées"
+            android:entries="@array/notifications_frequency_options"
+            android:entryValues="@array/notifications_frequency_values"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Paramètres de recherche">
+        <ListPreference
+            android:key="ingrédients_à_éviter"
+            android:title="Ingrédients à éviter"
+            android:summary="Définir des ingrédients à éviter"
+            android:entries="@array/ingrédients_à_éviter"
+            android:entryValues="@array/ingrédients_à_éviter"
+            android:defaultValue=""/>
+        <ListPreference
+            android:key="régimes_alimentaires"
+            android:title="Régimes alimentaires"
+            android:summary="Définir des régimes alimentaires"
+            android:entries="@array/régimes_alimentaires"
+            android:entryValues="@array/régimes_alimentaires"
+            android:defaultValue=""/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Paramètres d'affichage">
+        <SwitchPreference
+            android:key="mode_sombre"
+            android:title="Mode sombre"
+            android:summary="Activer le mode sombre"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Paramètres de partage">
+        <Preference
+            android:key="proposer_une_recette"
+            android:title="Proposer une recette"/>
+        <Preference
+            android:key="partager_avec_des_amis"
+            android:title="Partager avec des amis"/>
+    </PreferenceCategory>
+</PreferenceScreen>

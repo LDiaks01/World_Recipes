@@ -36,4 +36,6 @@
     <string name="connect">Connectez Vous</string>
     <string name="fingerp">use your fingerPrint to login</string>
     <string name="horsconnexion">Hors connexion</string>
+
+
 </resources>

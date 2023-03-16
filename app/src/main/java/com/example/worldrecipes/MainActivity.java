@@ -2,6 +2,7 @@ package com.example.worldrecipes;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case R.id.setting:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.containere,setting_fragment).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containere, setting_fragment).commit();
                         return true;
 
                     case R.id.addrecipe:
