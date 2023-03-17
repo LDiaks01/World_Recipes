@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pays">
+        <item>africa</item>
+        <item>china</item>
+        <item>thailand</item>
+        <item>greece</item>
+        <item>italy</item>
+        <item>eastern europe</item>
+        <item>spain</item>
+        <item>usa</item>
+    </array>
+</resources>
