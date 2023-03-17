@@ -22,6 +22,7 @@ public class RecettesDetailActivity extends AppCompatActivity {
 
     public List<String> titreRecettes = new ArrayList<>();
     public List<Integer> nbIngredients = new ArrayList<>();
+    public List<Integer> recettesId = new ArrayList<>();
     public List<Integer> images = new ArrayList<>();
 
 
@@ -51,7 +52,7 @@ public class RecettesDetailActivity extends AppCompatActivity {
 
         setupDatasForRecycler(cuisine);
 
-        RecetteViewAdapter adapter = new RecetteViewAdapter(this, titreRecettes, nbIngredients,images);
+        RecetteViewAdapter adapter = new RecetteViewAdapter(this, titreRecettes, nbIngredients,images, recettesId);
 
         recyclerView.setAdapter(adapter);
 
@@ -82,6 +83,7 @@ public class RecettesDetailActivity extends AppCompatActivity {
              ) {
 
             titreRecettes.add(recipe.title);
+            recettesId.add(recipe.recipeId);
             nbIngredients.add(myDao.getNbIngredientsPerRecipes(recipe.recipeId));
             i++;
             if(i == imgPreset.size() - 1){

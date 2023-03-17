@@ -33,6 +33,11 @@ public interface AppDAO {
     @Query("SELECT count(*) from recipes_aliases_light2 where RecipeID=:recipe_id")
     public int getNbIngredientsPerRecipes(int recipe_id);
 
+    @Query("SELECT OriginalIngredientName from recipes_aliases_light2 where recipeId=:recipeId")
+    public List<String> getRecipeIngredients(int recipeId);
+
+
+
 
     @RawQuery
     Cursor getRecipesByName(SupportSQLiteQuery query);
