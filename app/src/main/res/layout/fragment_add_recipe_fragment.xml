@@ -37,7 +37,7 @@
         android:layout_below="@+id/fame_Add_top"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edit_text_bg"
         android:ems="10"
         android:hint="@string/nomrecette"
@@ -62,19 +62,27 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_Add_Author"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="8dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
         android:text="@string/pays"
+        android:fontFamily="serif"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:typeface="serif"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Add_Author" />
 
     <Spinner
         android:id="@+id/spinner_Add_Country"
-        android:layout_width="311dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/textView7"
         android:layout_below="@+id/txt_Add_Author"
@@ -82,9 +90,11 @@
         android:layout_marginRight="24dp"
         android:layout_marginTop="24dp"
         android:entries="@array/pays"
+        android:fontFamily="serif"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:typeface="serif"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
@@ -94,7 +104,12 @@
         android:layout_below="@+id/spinner_Add_Country"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
         android:text="@string/desc"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_Add_Country" />
@@ -102,7 +117,7 @@
     <EditText
         android:id="@+id/txt_Add_Description"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="false"
         android:layout_below="@+id/textView6"
         android:layout_marginLeft="24dp"
@@ -118,56 +133,62 @@
         android:paddingRight="10dp"
         android:paddingTop="5dp" />
 
-    <Button
-        android:id="@+id/capture_image_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_Add_Description"
-        android:layout_alignBottom="@+id/txt_Add_Description"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="-83dp"
-        android:text="@string/insert" />
-
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignBottom="@+id/capture_image_btn"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="-34dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_baseline_image_24"
-        android:contentDescription="@string/description3"/>
-
-    <!--<Button
-        android:id="@+id/btn_submit"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/pink"
-        android:text="@string/envoyer" />-->
+        android:id="@+id/linear"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/txt_Add_Description">
 
-    <LinearLayout
-        android:layout_width="315dp"
-        android:layout_height="153dp"
-        android:layout_below="@+id/capture_image_btn"
-        android:layout_marginTop="95dp"
-        android:orientation="horizontal">
+        <Button
+            android:id="@+id/capture_image_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/insert" />
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_baseline_image_24"/>
+
+    <!--<Button
+<ImageView
+    android:id="@+id/image_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="-34dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ic_baseline_image_24"
+    android:contentDescription="@string/description3"/>
+    -->
+
+</LinearLayout>
+
+
+<!--<Button
+android:id="@+id/btn_submit"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:background="@color/pink"
+android:text="@string/envoyer" />-->
+
+
 
         <Button
             android:id="@+id/btn_submit"
 
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-
-            android:layout_marginBottom="-83dp"
+            android:layout_below="@+id/linear"
             android:text="@string/envoyer" />
-    </LinearLayout>
+
 
 
 </RelativeLayout>

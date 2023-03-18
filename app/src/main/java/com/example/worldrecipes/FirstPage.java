@@ -38,7 +38,7 @@ LottieAnimationView lottieAnimationView;
                 @Override
                 public void run() {
 
-                    Intent intent = new Intent(getApplicationContext(), ChoixLangue.class);
+                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(intent);
                     finish();
 
