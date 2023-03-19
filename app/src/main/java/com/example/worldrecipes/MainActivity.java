@@ -93,8 +93,16 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.addrecipe:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.containere,add_recipe_fragment).commit();
-                        return true;
+                        userManager = UserManager.getInstance();
+                        if(userManager.isCurrentUserLogged()){
+                            getSupportFragmentManager().beginTransaction().replace(R.id.containere,add_recipe_fragment).commit();
+                            return true;
+
+                        }else{
+                            Toast.makeText(getApplicationContext(), R.string.needconnexion, Toast.LENGTH_SHORT).show();
+                            return true;
+                            //startSignInActivity();
+                        }
 
                     case R.id.notification:
                         getSupportFragmentManager().beginTransaction().replace(R.id.containere,notification_fragment).commit();

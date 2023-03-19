@@ -57,6 +57,9 @@ public class IngredientsActivity extends AppCompatActivity {
 
         setupDatas(recipeId);
 
+        if(position > images.size()){
+            position = 0;
+        }
         imageRecette.setImageResource(images.get(position));
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.ingredients_row, ingredients);
         ListView listView = (ListView) findViewById(R.id.listeIngredients);

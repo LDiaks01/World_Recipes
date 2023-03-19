@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "1050206535481-3af7qllq4b8pb9ah7ba0ffmil25u1g3i.apps.googleusercontent.com",
+          "client_id": "1050206535481-7l3m98rl51esi13pvgnkdn8aedn7530d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.worldrecipes",
+            "certificate_hash": "28572a04988b1386a162a5e4a5b38de0acd628ae"
+          }
+        },
+        {
+          "client_id": "1050206535481-pj0ng2sjmfc73v4sd3kfnb3evunc5he3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

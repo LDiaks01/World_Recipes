@@ -89,6 +89,8 @@ public class LoginTabFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
+                UserManager userManager = UserManager.getInstance();
+                userManager.signOut(getActivity().getApplicationContext());
                 Intent intent = new Intent(getActivity().getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 Toast.makeText(getActivity().getApplicationContext(), R.string.hors_connexion_toast, Toast.LENGTH_SHORT).show();
